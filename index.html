@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, ">
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body  class="p-0 m-0">
+ <!-- div navbar atas -->
+ <div class="w-full flex justify-center">
+  <div class=" w-full lg:w-[800px] h-[40px] lg:p-6 bg-primary  flex justify-between lg:px-15 px-9 rounded-b-3xl">
+    <p class="font-bold flex items-center h-full text-white text-2xl">Al Quran</p>
+    <ul class="flex lg:gap-7 gap-3 items-center text-white font-medium text-xl">
+      <a href="#" class="Home cursor-pointer">Home</a>
+      <li id="surah" class="cursor-pointer">Surah</li>
+    </ul>
+  </div>
+</div>
+ 
+
+  <div class="main-kontainer ">
+  <!-- div fitur -->
+  <div id="div-fitur" class="container2 bg-white w-full  relative flex flex-col items-center  ">   
+    <h1 class="pt-5 font-bold text-4xl">My Quran</h1>
+    <p class=" p-2 text-center sm:w-[20px]  md:w-[600px] pt-5 text-gray-600">Baca, renungkan, dan hubungkan diri Anda dengan Al-Quran. Akses semua 114 surah dengan terjemahan dan audio</p>
+    
+    <div class="">
+         <!-- Lihat Surat -->
+         <div class="md:w-[720px] w-[325px] h-auto bg-primary p-5 rounded-3xl mt-6 shadow-lg  sm:text-left mx-auto ">
+          <h1 class="font-bold text-white text-2xl sm:text-lg">Lihat Semua Surat</h1>
+          <p class="text-white pt-4 mb-6 text-sm sm:text-base">
+            Akses 114 surat dalam Al-Qur'an dengan audio yang tersedia
+          </p>
+          <a href="#" class="lihat-surat inline-block rounded-3xl py-2 px-5 bg-white text-primary shadow-lg text-sm sm:text-base">
+            Lihat Surat
+          </a>
+        </div>
+        
+
+    <!-- Fitur Fitur -->
+    <div class=" md:w-[720px] w-[325px] h-auto bg-primary p-5 rounded-3xl mt-6 shadow-lg  sm:text-left mx-auto">
+      <h1 class=" font-bold  text-white text-2xl">Fitur-Fitur</h1>  
+      <div class="pt-3 text-white w-full lg:w-[410px] mb-5">
+        <li> Audio untuk didengarkan</li>
+        <li>terjemahan ayat</li>
+        <li>akses semua surat</li>
+      </div>
+      <a href=""  class=" lihat-surat rounded-3xl py-1 px-4  bg-white text-primary shadow-lg">Lihat Surat</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- div daftar surat -->
+<div id="list-surat" class="container2 bg-white w-full h-screen  relative flex flex-col items-center mx-auto   ">
+    <!-- Daftar Surat -->
+    <div id="daftar-surat" class=" md:w-[720px] flex-wrap flex pt-2 gap-4 w-[325px] sm:ml-5 justify-center ">
+      
+
+      
+      <h1 id="title-list" class=" font-bold text-2xl pt-7 lg:w-full ">Daftar Surat</h1>
+      
+    </div>   
+</div>
+    
+
+  </div>
+  
+  <div class="w-full flex justify-center hidden kontainer-surat-utama">
+    <div class="flex flex-col items-center w-full h-full">
+      <div class=" w-full lg:w-[800px] pt-6 flex justify-between px-8 rounded-b-3xl ">
+        <div>
+          <p  id="nama-surat" class="font-bold text-2xl lg:text-3xl">Al-Fatihah</p>
+          <p id="jumlah-ayat" class="text-sm pt-1">The Opening - 7 ayat</p>
+        </div>
+  
+        <div>
+          <p class=" nama-arab text-lg text-end">سُورَةُ ٱلْفَاتِحَةِ</p>
+          <p class=" arti text-sm pt-1 text-end">Meccan</p>
+        </div>
+      </div>
+    
+    <div class="lg:w-[750px] w-full h-auto  px-7 py-5  mt-6 shadow-lg border-1 border-gray-300">
+      <div class="flex justify-between items-center h-full ">
+        <div class="flex gap-5">
+          
+        </div>
+        <a id="next" href="" class="next py-1 px-4  rounded-[3px]"></a>
+      </div>
+      <!-- Ayat -->
+      <!--= <div class="flex gap-3 items-center h-full mt-6 justify-between kontainer-surat">
+        
+        <div class="flex gap-3">
+          <p class="p-5 flex items-center justify-center bg-primary/20 w-[30px] h-[30px] rounded-full  ">1</p>
+          <p class="p-5 flex items-center justify-center bg-primary/20 w-[10px] h-[10px] rounded-full ">1</p>
+        </div>
+          
+        <div class="flex items-center h- full">
+          <p></p>
+        </div>
+      </div>
+      <p class="text-center text-[14px] my-3"></p> -->
+      <!-- ayat selesai -->
+      <div class="hapus kontainer-surat">
+
+      </div>
+    </div>
+    <div class="flex w -full lg:w-[800px] justify-end mt-7 mr-10">
+      <button id="kembali" class="bg-primary rounded-md py-1 px-3 text-white cursor-pointer " >Kembali</button>
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
